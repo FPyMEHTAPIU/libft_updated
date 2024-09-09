@@ -6,7 +6,7 @@
 #    By: msavelie <msavelie@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/17 09:23:09 by msavelie          #+#    #+#              #
-#    Updated: 2024/09/09 12:32:43 by msavelie         ###   ########.fr        #
+#    Updated: 2024/09/09 12:54:31 by msavelie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -101,7 +101,6 @@ ${NAME}: ${OBJS}
 	@mv libftprintf.a ${NAME}
 	@${AR} ${NAME} ${OBJS}
 	@${LIB} ${NAME}
-	@echo "$(GREEN)🥳 Success!🥳$(DEF_COLOR)"
 
 clean:
 	@echo "$(YELLOW)🚽 Deleting object files in libft dir... 🚽$(DEF_COLOR)"
@@ -109,10 +108,9 @@ clean:
 	@make clean -C ${PRINTF_DIR} --no-print-directory
 
 fclean: clean
-	@echo "$(RED)🪦  Deleting libft... 🪦$(DEF_COLOR)"
+	@echo "$(RED)🪦 Deleting libft... 🪦$(DEF_COLOR)"
 	@${RM} ${NAME}
 	@make fclean -C ${PRINTF_DIR} --no-print-directory
-	@echo "$(RED)☣️  CLEAR ☣️$(DEF_COLOR)"
 
 re: fclean all
 
