@@ -6,7 +6,7 @@
 /*   By: msavelie <msavelie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:29:45 by msavelie          #+#    #+#             */
-/*   Updated: 2024/12/05 17:01:23 by msavelie         ###   ########.fr       */
+/*   Updated: 2024/12/27 12:53:16 by msavelie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,6 @@ uint32_t	ft_atoi_base(const char *str, const char *base);
 int			ft_abs(int num);
 void		ft_clean_strs(char **strs);
 int			ft_strcmp(const char *s1, const char *s2);
+int			ft_isspace(char *str);
 
 #endif
