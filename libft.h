@@ -6,7 +6,7 @@
 /*   By: msavelie <msavelie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:29:45 by msavelie          #+#    #+#             */
-/*   Updated: 2024/12/27 13:34:30 by msavelie         ###   ########.fr       */
+/*   Updated: 2024/12/30 16:34:40 by msavelie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,5 +76,6 @@ int			ft_abs(int num);
 void		ft_clean_strs(char **strs);
 int			ft_strcmp(const char *s1, const char *s2);
 int			ft_isspace_str(char *str);
+void		*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 
 #endif
