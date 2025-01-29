@@ -20,7 +20,11 @@ void	ft_clean_strs(char **strs)
 		return ;
 	i = 0;
 	while (strs[i])
-		free(strs[i++]);
+	{
+		free(strs[i]);
+		strs[i] = NULL;
+		i++;
+	}
 	free(strs);
 	strs = NULL;
 }
