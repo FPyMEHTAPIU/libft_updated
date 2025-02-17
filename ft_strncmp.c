@@ -6,7 +6,7 @@
 /*   By: msavelie <msavelie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 14:59:06 by msavelie          #+#    #+#             */
-/*   Updated: 2024/04/29 10:25:27 by msavelie         ###   ########.fr       */
+/*   Updated: 2025/02/17 15:52:56 by msavelie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	unsigned char	c1;
 	unsigned char	c2;
 
+	if (!s1)
+		return (-1);
 	while (n > 0)
 	{
 		c1 = (unsigned char) *s1;
