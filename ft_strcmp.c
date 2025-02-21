@@ -6,16 +6,16 @@
 /*   By: msavelie <msavelie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 16:58:31 by msavelie          #+#    #+#             */
-/*   Updated: 2025/02/21 16:47:01 by msavelie         ###   ########.fr       */
+/*   Updated: 2025/02/21 17:11:29 by msavelie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strcmp(const char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	unsigned char c1;
-	unsigned char c2;
+	unsigned char	c1;
+	unsigned char	c2;
 
 	while (1)
 	{
