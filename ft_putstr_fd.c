@@ -6,7 +6,7 @@
 /*   By: msavelie <msavelie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 16:15:56 by msavelie          #+#    #+#             */
-/*   Updated: 2024/07/26 11:36:11 by msavelie         ###   ########.fr       */
+/*   Updated: 2025/03/03 11:48:28 by msavelie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,7 @@ int	ft_putstr_fd(char *s, int fd)
 	}
 	i = 0;
 	while (s[i])
-	{
-		i += ft_putchar_fd(s[i], fd);
-		if (i < 0)
-			return (-1);
-	}
+		i++;
+	write(fd, s, i);
 	return (i);
 }
