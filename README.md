@@ -6,13 +6,13 @@ This project involves creating my own library with representations of standard f
 This library will be updated in the future.
 
 ### Usage
-To use this library, include "libft.h" in your code and link the created libft.a file when compiling your program.
+To use this library, include `libft.h` in your code and link the created `libft.a` file when compiling your program.
 
 ### Addition features
-- representation of printf and fprintf;
-- get_next_line function returns a string until '\n' or '\0';
-- ft_abs function returns absolute value of integer;
-- ft_free_strs function frees a memory that was allocated.
+- representation of `printf` and `fprintf`;
+- `get_next_line` function returns a string until `\n` or `\0`;
+- `ft_abs function` returns absolute value of integer;
+- `ft_free_strs` function frees a memory that was allocated.
 
 ### Grade
 
